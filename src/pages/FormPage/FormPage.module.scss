@@ -1,0 +1,73 @@
+@import '@/shared/config/theme';
+.wrapper {
+  min-height: 100vh;
+  background: $background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  position: relative;
+}
+
+.select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+  width: 100%;
+
+  &:focus {
+    border-color: $primary;
+    outline: none;
+    background-color: #fff;
+  }
+}
+
+.select.error {
+  border-color: red;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: $primary;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $secondary;
+  }
+}
