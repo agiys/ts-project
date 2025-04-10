@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import FormPage from '@/pages/FormPage/index.vue'
 import ResultPage from '@/pages/ResultPage/index.vue'
+import { createApp } from 'vue'
 
 const router = createRouter({
   history: createWebHistory(),
